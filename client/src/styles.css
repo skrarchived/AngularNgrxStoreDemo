@@ -1,0 +1,19 @@
+body {
+  background-color: #f1f1f1;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1.9px solid red;
+}
+
+input.ng-valid.ng-touched {
+  border: 1.9px solid green;
+}
+
+:disabled {
+  cursor: not-allowed;
+}
+
+img {
+  width: 100%;
+}

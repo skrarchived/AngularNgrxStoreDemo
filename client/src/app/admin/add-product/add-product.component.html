@@ -1,0 +1,47 @@
+<div>
+  <p *ngIf="error" style="color: red;">{{ error }}</p>
+  <h2>Add new Product</h2>
+
+  <form [formGroup]="addProductForm" (ngSubmit)="addProduct()">
+    <p>
+      Product Name :
+      <input type="text" formControlName="name" />
+    </p>
+    <p>
+      Select Company :
+      <select formControlName="company">
+        <option *ngFor="let company of Companies" [value]="company">
+          {{ company }}
+        </option>
+      </select>
+    </p>
+    <p>
+      Select Category :
+      <select formControlName="category">
+        <option *ngFor="let category of Categories" [value]="category">
+          {{ category }}
+        </option>
+      </select>
+    </p>
+    <p>
+      Product Image :
+      <input type="file" name="image" (change)="onFileSelect($event)" />
+    </p>
+    <p>
+      Price :
+      <input type="number" formControlName="price" />
+    </p>
+    <p>
+      Description : <br />
+      <textarea formControlName="description" cols="30" rows="5"></textarea>
+    </p>
+    <p>
+      <input
+        type="submit"
+        [disabled]="addProductForm.invalid"
+        class="btn btn-success"
+        value="Add"
+      />
+    </p>
+  </form>
+</div>

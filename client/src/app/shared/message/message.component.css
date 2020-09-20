@@ -1,0 +1,9 @@
+.messageContainer{
+  position: absolute;
+  top: 3em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  opacity: .8;
+}

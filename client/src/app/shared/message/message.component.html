@@ -1,0 +1,8 @@
+<div class="messageContainer">
+  <div *ngIf="message" class="alert alert-primary fade show" role="alert">
+    {{ message }}
+    <button class="close ml-3" (click)="clearMessage()">
+      <span>&times;</span>
+    </button>
+  </div>
+</div>

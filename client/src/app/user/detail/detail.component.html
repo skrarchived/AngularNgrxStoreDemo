@@ -1,0 +1,22 @@
+<div>
+  <p *ngIf="message">{{ message }}</p>
+  <div class="productContainer row" *ngIf="Product.name">
+    <div class="col-6" *ngIf="Product.image">
+      <img [src]="baseImageUrl + Product.image" alt="" />
+    </div>
+    <div class="col-6">
+      <div class="detailContainer">
+        <h2>{{ Product.name }}</h2>
+        <p>Price : {{ Product.price }}</p>
+        <p>Company : {{ Product.company }}</p>
+        <p>Category : {{ Product.category }}</p>
+        <p>Desription : {{ Product.description }}</p>
+      </div>
+      <div>
+        <button class="btn btn-primary" (click)="addToCart(Product._id)">
+          Add To Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

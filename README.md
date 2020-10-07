@@ -1,4 +1,4 @@
-# Angular Node JWT Demo
+# Node Angular Refresh Token Demo
 
 Simple demo of JWT access and refresh Token in NodeJS with Angular Frontend.
 

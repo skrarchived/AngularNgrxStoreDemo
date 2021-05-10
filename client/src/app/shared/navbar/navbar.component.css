@@ -1,0 +1,38 @@
+.cart img {
+  width: 90%;
+}
+.rightLink {
+  display: flex;
+  align-items: center;
+}
+
+.userProfile {
+  float: right;
+}
+.rightLink button {
+  background-color: #ff000000;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.userProfile button img {
+  padding: 0.2em;
+}
+
+.userLinks ul {
+  position: absolute;
+  background-color: white;
+  list-style-type: none;
+  z-index: 100;
+  padding: 1em 2em;
+  margin: 0;
+  right: 1em;
+  top: 3em;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+}
+
+.userLinks > ul > li {
+  margin: 0.2em;
+}

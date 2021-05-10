@@ -1,0 +1,17 @@
+<div class="login-form-container">
+  <h2>Login Here</h2>
+  <p *ngIf="error">{{error}}</p>
+  <form [formGroup]="loginForm" (submit)="loginUser()">
+    <p>
+      Email :
+      <input type="email" formControlName="email" />
+    </p>
+    <p>
+      Password :
+      <input type="password" formControlName="password" />
+    </p>
+    <p>
+      <input type="submit" class="btn btn-primary" [disabled]="loginForm.invalid" value="Login" />
+    </p>
+  </form>
+</div>
